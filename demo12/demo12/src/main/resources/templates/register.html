@@ -40,11 +40,11 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="fas fa-user"></i></span>
                         </div>
-                        <input type="text" class="form-control" placeholder="username" required="required" th:field="*{full_name}">
+                        <input type="text" class="form-control" placeholder="username" required="required" th:field="*{name}">
                     </div>
                     <span class="validationError"
-                          th:if="${#fields.hasErrors('full_name')}"
-                          th:errors="*{full_name}">FULL name</span>
+                          th:if="${#fields.hasErrors('name')}"
+                          th:errors="*{name}">Name</span>
 
 
                     <div class="input-group form-group">

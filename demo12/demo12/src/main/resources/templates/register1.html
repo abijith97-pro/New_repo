@@ -18,10 +18,9 @@
     <link rel="stylesheet" type="text/css" href="signcss.css">
     <style>
         span{
-            color:white;
+            color:red;
         }
     </style>
-
 
 </head>
 <body style="background-image: url('images/bg-01.jpg');">
@@ -39,12 +38,12 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="fas fa-user"></i></span>
                         </div>
-                        <input type="text" class="form-control" placeholder="username" required th:field="*{full_name}">
+                        <input type="text" class="form-control" placeholder="username" required th:field="*{name}">
 
                     </div>
                     <span class="validationError"
-                          th:if="${#fields.hasErrors('full_name')}"
-                          th:errors="*{full_name}">Full name</span>
+                          th:if="${#fields.hasErrors('name')}"
+                          th:errors="*{name}"> Name</span>
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="fas fa-envelope"></i></span>
@@ -59,7 +58,7 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="fas fa-key"></i></span>
                         </div>
-                        <input type="password"  class="form-control" placeholder="password" th:field="*{password}">
+                        <input type="password"  class="form-control" placeholder="password" th:field="*{password}"  >
                     </div>
                     <span class="validationError"
                           th:if="${#fields.hasErrors('password')}"
@@ -68,11 +67,11 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="fas fa-key"></i></span>
                         </div>
-                        <input type="password"  class="form-control" placeholder="confirm password" th:field="*{password}">
+                        <input type="password"  class="form-control" placeholder="confirm password" th:field="*{confirmpassword}">
                     </div>
                     <span class="validationError"
-                          th:if="${#fields.hasErrors('password')}"
-                          th:errors="*{password}">Password</span>
+                          th:if="${#fields.hasErrors('confirmpassword')}"
+                          th:errors="*{confirmpassword}">ConfirmPassword</span>
                     <div class="row align-items-center remember" style="margin-bottom: 20px">
                         <input type="checkbox">Remember Me
                     </div>
