@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor="#87cefa">
+<div text-align="center">
+<h1><b><center>New Connection is Done</center></b></h1>
+
+    <tr th:each="user : ${registration}">
+        Hi <td th:text="${user.firstname}">dfzxc</td> Your process of new connection is done,Your SIM card is will be delivered as soon as possible at
+        <td th:text="${user.address}">czxczxc</td>
+
+    </tr>
+
+</div>
+</body>
+</html>
